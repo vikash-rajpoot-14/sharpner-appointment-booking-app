@@ -40,7 +40,7 @@ async function showData() {
 
 async function deleteData(id) {
     await axios.delete(`http://localhost:3000/user/${id}`).then(() => {
-        console.log("vikash delete data")
+        console.log("user deleted successfully");
         showData();
     })
 }
